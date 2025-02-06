@@ -8,23 +8,7 @@
 </head>
 <body>
     <script>
-        window.onload = function () {
-            if (typeof CMS !== "undefined") {
-                CMS.init({
-                    config: {
-                        backend: {
-                            name: "github",
-                            repo: "drskiboss/big-shapes",
-                            branch: "main",
-                            site_domain: "big-shapes.com",
-                            auth_endpoint: "https://api.netlify.com/auth/done",
-                        }
-                    }
-                });
-            } else {
-                console.error("Netlify CMS failed to load.");
-            }
-        };
+        CMS.init();
     </script>
 </body>
 </html>
