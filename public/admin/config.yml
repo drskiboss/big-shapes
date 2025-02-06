@@ -1,6 +1,4 @@
-
-
- backend:
+  backend:
   name: github
   repo: drskiboss/big-shapes
   branch: main
