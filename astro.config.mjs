@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
+console.log("DatoCMS API Key:", process.env.DATOCMS_API_KEY);
 export default defineConfig({
   vite: {
     define: {
