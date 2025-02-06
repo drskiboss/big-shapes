@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "astro": "^5.2.5"
-    "@sanity/client": "^5.7.1"
+    "@tinacms/cli": "^1.6.0",
+    "tinacms": "^1.6.0"
   }
 }
