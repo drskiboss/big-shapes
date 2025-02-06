@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netlify CMS</title>
-    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
 </head>
 <body>
+    <h1>Loading Netlify CMS...</h1>
+    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
     <script>
-        CMS.init();
+        setTimeout(function () {
+            if (typeof CMS !== "undefined") {
+                CMS.init();
+            } else {
+                console.error("Netlify CMS script failed to load.");
+            }
+        }, 1000);
     </script>
 </body>
 </html>
+
