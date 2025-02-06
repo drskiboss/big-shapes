@@ -2,7 +2,6 @@ backend:
   name: github
   repo: drskiboss/big-shapes
   branch: main
-  site_domain: https://big-shapes.com
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
