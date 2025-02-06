@@ -1,7 +1,11 @@
-backend:
+
+
+ backend:
   name: github
   repo: drskiboss/big-shapes
   branch: main
+  site_domain: big-shapes.com
+  auth_endpoint: https://api.netlify.com/auth/done
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
