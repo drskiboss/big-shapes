@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netlify CMS</title>
+    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
 </head>
 <body>
-    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             if (typeof CMS !== "undefined") {
-                CMS.init();
+                CMS.init({
+                    config: {
+                        backend: {
+                            name: "github",
+                            repo: "drskiboss/big-shapes",
+                            branch: "main",
+                            site_domain: "big-shapes.com",
+                            auth_endpoint: "https://api.netlify.com/auth/done",
+                        }
+                    }
+                });
             } else {
                 console.error("Netlify CMS failed to load.");
             }
