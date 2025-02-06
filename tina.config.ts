@@ -1,9 +1,9 @@
 import { defineConfig } from "tinacms";
 
 export default defineConfig({
-  clientId: "YOUR_TINA_CLIENT_ID", // Replace with your Tina Client ID
+  clientId: "b7aa0e72-7068-44d0-a732-e4082ec3aa76", // Replace with your Tina Client ID
   branch: "main", // Git branch where content is stored
-  token: "YOUR_TINA_TOKEN", // Replace with your Tina API Token
+  token: "ff2c21aaa8f190821caf29c6133e46612226e9e2", // Replace with your Tina API Token
   build: {
     publicFolder: "public",
     outputFolder: "admin",
