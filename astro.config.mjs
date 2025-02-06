@@ -1,6 +1,9 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+
+// Debugging: Print API Key to Cloudflare Build Logs
 console.log("DatoCMS API Key:", process.env.DATOCMS_API_KEY);
+
 export default defineConfig({
   vite: {
     define: {
@@ -9,6 +12,3 @@ export default defineConfig({
   },
 });
 
-
-// https://astro.build/config
-export default defineConfig({});
