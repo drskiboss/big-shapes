@@ -5,8 +5,8 @@ backend:
   auth_scope: repo
   base_url: https://big-shapes.com
   auth_endpoint: /admin
-  client_id: "Ov23liJEWMbeA2KbuFAb"
-  client_secret: "1d7f04fbfcf9a582e4efd760f0e9c287ef6f8a4e"
+  client_id: Ov23liJEWMbeA2KbuFAb
+  client_secret: 1d7f04fbfcf9a582e4efd760f0e9c287ef6f8a4e
 
 
 media_folder: "public/uploads"
