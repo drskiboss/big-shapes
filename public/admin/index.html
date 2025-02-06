@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decap CMS</title>
-    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+    <title>big shapes</title>
 </head>
 <body>
+    <h1>Loading Decap CMS...</h1>
     <script>
-        CMS.init();
+        (function () {
+            var script = document.createElement("script");
+            script.src = "https://unpkg.com/decap-cms@latest/dist/decap-cms.js";
+            script.onload = function () {
+                if (typeof CMS !== "undefined") {
+                    CMS.init();
+                } else {
+                    console.error("Decap CMS script loaded but CMS is undefined.");
+                }
+            };
+            script.onerror = function () {
+                console.error("Failed to load Decap CMS script.");
+            };
+            document.body.appendChild(script);
+        })();
     </script>
 </body>
 </html>
